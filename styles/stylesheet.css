@@ -1,0 +1,30 @@
+* {
+  font-family: sans-serif;
+}
+header {
+  color: white;
+  background-color: #008fb3;
+  padding: 1rem;
+  margin: 1rem 0rem;
+}
+h1 {
+  font-size: 3rem;
+}
+header p {
+  font-size: 2rem;
+  font-style: italic;
+}
+nav {
+  background-color: #f2f2f2;
+  padding: 1rem;
+}
+nav li {
+  font-weight: bold;
+  display: inline;
+  list-style-type: none;
+  color: #333333;
+}
+nav li + li:before{
+    content: " / ";
+    padding: 0 10px;
+}

@@ -24,7 +24,61 @@ nav li {
   list-style-type: none;
   color: #333333;
 }
-nav li + li:before{
+nav li:first-child {
+    margin-left: 10%;
+}
+nav li + li:before {
+    content: " / ";
+    padding: 0 10px;
+}
+h2 {
+  font-weight: bold;
+  font-size: 1rem;
+  color: #008fb3;
+}
+h3 {
+  color: #33ccff;
+}
+article {
+  width: 40%;
+  margin-left: 10%;
+  padding: 1rem;
+}
+.important {
+  font-style: italic;
+}
+h4 {
+  font-weight: bold;
+  color: #333333;
+}
+aside {
+  float: right;
+  width: 20%;
+  margin-right: 10%;
+}
+aside a {
+  color: #008fb3;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+footer {
+  position: relative;
+  left: 5px;
+  right: 0;
+  bottom: 0;
+  background-color: #404040;
+  color: white;
+}
+footer li {
+  font-weight: bold;
+  display: inline;
+  list-style-type: none;
+  color: white;
+}
+footer li + li:before{
     content: " / ";
     padding: 0 10px;
 }

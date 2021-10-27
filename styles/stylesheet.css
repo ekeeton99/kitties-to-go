@@ -1,18 +1,33 @@
 * {
   font-family: sans-serif;
 }
+html, body {
+  height: 100%
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
+}
 header {
   color: white;
   background-color: #008fb3;
   padding: 1rem;
-  margin: 1rem 0rem;
+  margin: 0rem;
 }
 h1 {
   font-size: 3rem;
+  margin-left: 20rem;
 }
 header p {
   font-size: 2rem;
   font-style: italic;
+  margin-left: 20rem;
 }
 nav {
   background-color: #f2f2f2;
@@ -25,11 +40,14 @@ nav li {
   color: #333333;
 }
 nav li:first-child {
-    margin-left: 10%;
+    margin-left: 20rem;
 }
 nav li + li:before {
     content: " / ";
     padding: 0 10px;
+}
+nav ul {
+  padding-inline-start: 0px;
 }
 h2 {
   font-weight: bold;
@@ -41,8 +59,9 @@ h3 {
 }
 article {
   width: 40%;
-  margin-left: 10%;
+  margin-left: 20rem;
   padding: 1rem;
+  float: left;
 }
 .important {
   font-style: italic;
@@ -54,7 +73,8 @@ h4 {
 aside {
   float: right;
   width: 20%;
-  margin-right: 10%;
+  padding: 1rem;
+  margin-right: 20rem;
 }
 aside a {
   color: #008fb3;
@@ -65,12 +85,12 @@ aside a {
   clear: both;
 }
 footer {
-  position: relative;
-  left: 5px;
-  right: 0;
+  position: fixed;
   bottom: 0;
   background-color: #404040;
   color: white;
+  padding: 3rem 35%;
+  text-align: center;
 }
 footer li {
   font-weight: bold;
@@ -81,4 +101,7 @@ footer li {
 footer li + li:before{
     content: " / ";
     padding: 0 10px;
+}
+footer * {
+  padding: .5rem 0rem;
 }

@@ -1,6 +1,13 @@
 * {
   font-family: sans-serif;
 }
+* a {
+  text-decoration: none;
+  color: inherit;
+}
+* a:hover {
+  text-decoration: underline;
+}
 html, body {
   height: 100%
 }
@@ -82,7 +89,6 @@ aside {
 }
 aside a {
   color: #008fb3;
-  text-decoration: none;
 }
 aside section {
   padding: 1rem;

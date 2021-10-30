@@ -7,6 +7,7 @@ html, body {
 body {
   display: flex;
   flex-direction: column;
+  line-height: 1.5;
 }
 .content {
   flex: 1 0 auto;
@@ -53,9 +54,12 @@ h2 {
   font-weight: bold;
   font-size: 1rem;
   color: #008fb3;
+  padding-top: 1rem;
 }
 h3 {
-  color: #33ccff;
+  color: #00b8e6;
+  font-weight: lighter;
+  font-size: 1.25rem;
 }
 article {
   width: 40%;
@@ -73,20 +77,22 @@ h4 {
 aside {
   float: right;
   width: 20%;
-  padding: 1rem;
+  padding-top: 1rem;
   margin-right: 20rem;
 }
 aside a {
   color: #008fb3;
+  text-decoration: none;
 }
-.clearfix::after {
-  content: "";
-  display: block;
-  clear: both;
+aside section {
+  padding: 1rem;
+}
+aside figure {
+  margin-block-start: 0px;
+  margin-inline-start: 0px;
 }
 footer {
-  position: fixed;
-  bottom: 0;
+  margin-top: 3rem;
   background-color: #404040;
   color: white;
   padding: 3rem 35%;
@@ -104,4 +110,8 @@ footer li + li:before{
 }
 footer * {
   padding: .5rem 0rem;
+}
+.blue {
+  color: #008fb3;
+  background-color: inherit;
 }

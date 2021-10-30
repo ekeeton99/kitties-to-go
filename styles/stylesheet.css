@@ -25,7 +25,7 @@ body {
 header {
   color: white;
   background-color: #008fb3;
-  padding: 1rem;
+  padding: 3rem 1rem;
   margin: 0rem;
 }
 h1 {
@@ -36,6 +36,7 @@ header p {
   font-size: 2rem;
   font-style: italic;
   margin-left: 20rem;
+  line-height: 0;
 }
 nav {
   background-color: #f2f2f2;
@@ -93,7 +94,7 @@ aside a {
 aside section {
   padding: 1rem;
 }
-aside figure {
+figure {
   margin-block-start: 0px;
   margin-inline-start: 0px;
 }

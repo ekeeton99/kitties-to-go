@@ -24,9 +24,22 @@ body {
 }
 header {
   color: white;
-  background-color: #008fb3;
+  background-color: #007A99;
   padding: 3rem 1rem;
   margin: 0rem;
+}
+.skip {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.skip:focus {
+  position: static;
+  width: auto;
+  height: auto;
 }
 h1 {
   font-size: 3rem;
